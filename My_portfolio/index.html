@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Hackathon Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">Portfolio</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Sandile</span></h1>
+                    <h2>Web Developer</h2>
+                    <p>Creating beautiful, functional websites</p>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>My Journey</h3>
+                        <p>I'm an aspiring web developer and software engineer with a passion for building innovative and user-friendly digital experiences.</p>
+                        <p>When I'm not coding, i enjoy playing soccer, diving into videogames and staying up-to-date with the latest tech trends through vlogs and tech magazine.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <p>HTML/CSS</p>
+                                <div class="bar">
+                                    <div class="level html">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>JavaScript</p>
+                                <div class="bar">
+                                    <div class="level js">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>React</p>
+                                <div class="bar">
+                                    <div class="level react">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be loaded from database -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-envelope"></i> matsendzingeko@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> + (268) 7820 3892</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
